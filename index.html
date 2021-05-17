@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">  
+    <title>BMI Calculator</title>
+    
+    <style>
+      body{
+        font-family:sans-serif;
+        color:white;
+        background-color:#34495e;
+      }
+      
+      .bmi{
+           height:200px;
+		      width:300px;
+		      padding:50px;
+	    	  position:absolute;
+		      top:50%;
+		      left:50%;
+          transform:translate(-50%,-50%);
+          background-color:#191919;
+          text-align:center;
+      }
+
+      .box{
+            padding:10px 15px 10px 15px;
+            outline:none;
+
+            border-radius:20px;
+            display:block;
+            width:200px;
+            margin:20px auto;
+            text-align:center;
+            border:2px solid;
+            border-color:#3498db;
+      }
+
+      .box:hover{
+            width:300px;
+            border:2px solid green;
+
+      }
+
+      .submit{
+              width:100px;
+              padding:5px 5px 5px 5px;
+              border-radius:20px;
+              border:2px solid #3498db
+
+      }
+      .submit:hover{
+              width:120px;
+              border:2px solid green ;
+              background-color:#ccfaf1;
+              cursor:pointer;
+      }
+      
+      </style>
+  </head>
+
+  <body>
+    
+
+    <form action="/" method="post" class="bmi">
+      <h2>BMI Calculator</h2>
+      <input type="text" name="weight" class="box" placeholder="weight(kg)">
+
+      <input type="text" name="height" class="box" placeholder="height(m)">
+
+      <button type="submit" name="submit" class="submit">calculate BMI</button>
+
+    </form>
+  </body>
+</html>
